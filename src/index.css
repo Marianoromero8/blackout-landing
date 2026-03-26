@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  /* Mantén tus colores, son útiles como variables */
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --accent: #aa3bff; /* Podrías cambiar esto a un naranja/dorado luego */
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  /* Configuración base */
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--text);
+  background-color: var(--bg);
+  scroll-behavior: smooth; /* ¡Vital para tu navegación por IDs! */
+}
+
+/* Modo Oscuro - Mantenlo, es un plus de calidad */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffff;
+    --text-h: #f3f4f6;
+    --bg: #000;
+    --border: #2e303a;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Elimina las restricciones de ancho de #root para que Tailwind sea libre */
+#root {
+  width: 100%;
+}
+
+/* Estilos mínimos para títulos si no quieres usar clases de Tailwind en cada uno */
+h1,
+h2,
+h3 {
+  color: var(--text-h);
+  margin: 0;
+}
