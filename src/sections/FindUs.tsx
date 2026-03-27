@@ -1,6 +1,6 @@
 export function FindUs() {
   return (
-    <section id="find-us" className="py-24 bg-black border-t border-zinc-900">
+    <section id="find-us" className="py-24 bg-black border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* INFO DE UBICACIÓN */}
         <div>
