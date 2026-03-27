@@ -25,7 +25,8 @@ export function Footer() {
           </div>
 
           <a
-            href="https://wa.me/tu-numero"
+            href="https://wa.me/+542914297931"
+            target="_blank"
             className="group relative px-12 py-6 bg-white text-black rounded-full font-black uppercase tracking-tighter text-xl hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,255,0.1)]"
           >
             WhatsApp
@@ -52,6 +53,7 @@ export function Footer() {
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61569508965909&locale=es_LA"
+                target="_blank"
                 className="text-zinc-500 hover:text-white transition-colors flex flex-row gap-2 items-center"
               >
                 <FaFacebook />
@@ -66,19 +68,19 @@ export function Footer() {
             </h4>
             <div>
               <a
-                href="mailto:tiendaBlackout@gmail.com"
+                href="mailto:frcorvatta@gmail.com"
                 target="_blank"
                 className="text-zinc-500 hover:text-white transition-colors flex flex-row gap-2 items-center"
               >
-                <FaEnvelope /> hola@tiendablackout.com
+                <FaEnvelope /> frcorvatta@gmail.com
               </a>
               <a
-                href="https://wa.me/tu-numero"
+                href="https://wa.me/+542914297931"
                 target="_blank"
                 className="text-zinc-500 hover:text-white transition-colors flex flex-row gap-2 items-center"
               >
                 {" "}
-                <FaWhatsapp /> +54 291 123-4567
+                <FaWhatsapp /> +54 291-4297931
               </a>
             </div>
           </div>

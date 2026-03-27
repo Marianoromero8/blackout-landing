@@ -50,9 +50,9 @@ export function NavBar() {
 
         {/* Botón de Acción (Opcional) */}
         <div className="flex items-center gap-4">
-          <button className="hidden md:inline-flex h-9 items-center justify-center rounded-md border border-[#ffff] px-4 py-2 text-sm font-medium shadow transition-colors hover:bg-[#ffff] hover:text-black">
+          {/* <button className="hidden md:inline-flex h-9 items-center justify-center rounded-md border border-[#ffff] px-4 py-2 text-sm font-medium shadow transition-colors hover:bg-[#ffff] hover:text-black">
             Pedir presupuesto
-          </button>
+          </button> */}
 
           {/* Aquí podrías añadir un menú móvil más adelante */}
         </div>
