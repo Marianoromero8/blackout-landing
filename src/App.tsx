@@ -16,8 +16,6 @@ function App() {
         <Catalog />
         <HowWeWork />
         <FindUs />
-        {/* <AboutUs />
-         */}
       </main>
       <Footer />
     </div>

@@ -32,7 +32,6 @@ export function Catalog() {
   return (
     <section id="catalog" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Encabezado */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
           <div>
             <h2 className="text-sm font-bold tracking-widest uppercase mb-2">
@@ -48,11 +47,9 @@ export function Catalog() {
           </p>
         </div>
 
-        {/* Grilla de Productos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {PRODUCTS.map((product) => (
             <div key={product.id} className="group cursor-pointer">
-              {/* Contenedor de Imagen */}
               <div className="relative aspect-[4/5] overflow-hidden bg-zinc-100 rounded-2xl mb-6">
                 <img
                   src={product.image}
@@ -62,7 +59,6 @@ export function Catalog() {
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors" />
               </div>
 
-              {/* Info del Producto */}
               <div className="space-y-3">
                 <div className="flex gap-2">
                   {product.features.map((feat) => (

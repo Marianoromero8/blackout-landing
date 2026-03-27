@@ -31,7 +31,6 @@ export function HowWeWork() {
   return (
     <section id="how-we-work" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Título de Sección */}
         <div className="mb-20">
           <h2 className="text-xs font-bold tracking-[0.4em] text-zinc-600 uppercase mb-4">
             Proceso
@@ -49,17 +48,14 @@ export function HowWeWork() {
               key={step.id}
               className="group relative p-10 bg-black rounded-[2.5rem] border border-zinc-900 hover:border-zinc-700 transition-all duration-500 ease-in-out"
             >
-              {/* Número de paso en el fondo (Gris muy oscuro) */}
               <span className="absolute top-6 right-10 text-8xl font-black text-zinc-900 group-hover:text-zinc-800 transition-colors duration-500 select-none">
                 {step.id}
               </span>
 
-              {/* Contenedor del Icono */}
               <div className="w-16 h-16 rounded-2xl bg-zinc-900 text-zinc-400 flex items-center justify-center mb-8 group-hover:bg-white group-hover:text-black transition-all duration-500">
                 {step.icon}
               </div>
 
-              {/* Textos */}
               <div className="relative z-10">
                 <h4 className="text-2xl font-bold text-white uppercase mb-4 tracking-tight">
                   {step.title}
@@ -69,7 +65,6 @@ export function HowWeWork() {
                 </p>
               </div>
 
-              {/* Línea de progreso interna */}
               <div className="mt-8 h-[1px] w-full bg-zinc-900 relative overflow-hidden">
                 <div className="absolute inset-0 bg-white w-0 group-hover:w-full transition-all duration-700 ease-out"></div>
               </div>
@@ -77,7 +72,6 @@ export function HowWeWork() {
           ))}
         </div>
 
-        {/* Botón de Acción Principal */}
         <div className="mt-20 flex justify-center">
           <button className="group flex items-center gap-4 bg-white text-black px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-zinc-200 transition-all active:scale-95">
             <a href="#contact">Solicitar Asesoramiento</a>
