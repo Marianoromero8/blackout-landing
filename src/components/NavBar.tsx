@@ -20,7 +20,6 @@ export function NavBar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        {/* Logo de blackout */}
         <div className="flex items-center gap-2">
           <span className="flex flex-row gap-4 text-2xl font-bold tracking-tight text-white">
             <p className="font-light">TIENDA</p>
@@ -28,7 +27,6 @@ export function NavBar() {
           </span>
         </div>
 
-        {/* Menú de Navegación */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             {navItems.map((item) => (
@@ -48,13 +46,12 @@ export function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Botón de Acción (Opcional) */}
         <div className="flex items-center gap-4">
           {/* <button className="hidden md:inline-flex h-9 items-center justify-center rounded-md border border-[#ffff] px-4 py-2 text-sm font-medium shadow transition-colors hover:bg-[#ffff] hover:text-black">
             Pedir presupuesto
           </button> */}
 
-          {/* Aquí podrías añadir un menú móvil más adelante */}
+          {/* Menu hamburguesa para responsive*/}
         </div>
       </div>
     </header>

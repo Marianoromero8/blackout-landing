@@ -4,28 +4,22 @@ export function Home() {
 
   return (
     <section id="home" className="relative overflow-hidden">
-      {/* Contenedor Principal con Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[calc(100vh-80px)] items-center">
-        {/* COLUMNA IZQUIERDA: TEXTO */}
         <div className="p-8 md:p-16 flex flex-col gap-6 z-10">
-          {/* Etiqueta Premium (opcional) */}
           <span className="inline-block bg-zinc-700 px-4 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase w-fit">
             Soluciones a Medida
           </span>
 
-          {/* Título Principal */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight">
             Transformá tus ambientes con{" "}
             <span className="text-zinc-700">privacidad total.</span>
           </h1>
 
-          {/* Subtítulo */}
           <p className="text-lg md:text-xl max-w-lg leading-relaxed">
             Cortinas Blackout de alta calidad. Diseño moderno, aislación térmica
             y oscuridad garantizada para tu descanso.
           </p>
 
-          {/* Botones de Acción */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <a
               href="#catalog"
@@ -42,9 +36,7 @@ export function Home() {
           </div>
         </div>
 
-        {/* COLUMNA DERECHA: IMAGEN (Aspiracional) */}
         <div className="relative h-full w-full min-h-[300px] md:min-h-full">
-          {/* Superposición de degradado para integrarla con el fondo oscuro */}
           <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/20 to-transparent z-10 md:block hidden"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent z-10 md:hidden block"></div>
 

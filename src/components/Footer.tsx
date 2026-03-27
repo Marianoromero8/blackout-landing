@@ -13,7 +13,6 @@ export function Footer() {
       className="bg-black pt-24 pb-12 border-t border-zinc-900"
     >
       <div className="max-w-7xl mx-auto px-6">
-        {/* BLOQUE DE CONTACTO (CTA) */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-24 gap-12">
           <div className="text-center md:text-left">
             <h2 className="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase mb-4">
@@ -36,7 +35,6 @@ export function Footer() {
 
         <hr className="border-zinc-900 mb-12" />
 
-        {/* INFO FINAL Y REDES */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 text-center md:text-left">
           <div>
             <h4 className="text-white font-bold uppercase mb-4 tracking-widest text-xs">
