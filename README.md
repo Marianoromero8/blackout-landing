@@ -1,3 +1,3 @@
-# Xurreria Trebol
+# Tienda BLACKOUT
 
-![Xurreria Trebol](public/logo.jpg)
+![Tienda BLACKOUT](public/logoBlackout.jpg)
