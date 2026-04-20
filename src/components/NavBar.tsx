@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,21 +14,22 @@ const navItems = [
   { title: "Catalogo", href: "#catalog" },
   { title: "Cómo Trabajamos", href: "#how-we-work" },
   { title: "Encuentranos", href: "#find-us" },
-  // { title: "Nosotros", href: "#about" },
   { title: "Contacto", href: "#contact" },
 ];
 
 export function NavBar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <div className="flex items-center gap-2">
-          <span className="flex flex-row gap-4 text-2xl font-bold tracking-tight text-white">
-            <p className="font-light">TIENDA</p>
-            <p className="font-black">BLACKOUT</p>
-          </span>
-        </div>
+        {/* Logo */}
+        <span className="flex flex-row gap-4 text-2xl font-bold tracking-tight text-white">
+          <p className="font-light">TIENDA</p>
+          <p className="font-black">BLACKOUT</p>
+        </span>
 
+        {/* Desktop nav */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             {navItems.map((item) => (
@@ -46,14 +49,33 @@ export function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="flex items-center gap-4">
-          {/* <button className="hidden md:inline-flex h-9 items-center justify-center rounded-md border border-[#ffff] px-4 py-2 text-sm font-medium shadow transition-colors hover:bg-[#ffff] hover:text-black">
-            Pedir presupuesto
-          </button> */}
-
-          {/* Menu hamburguesa para responsive*/}
-        </div>
+        {/* Burger button */}
+        <button
+          className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-white hover:bg-black transition-colors"
+          onClick={() => setOpen((prev) => !prev)}
+          aria-label="Abrir menú"
+        >
+          {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="md:hidden border-t border-zinc-800 bg-background/98 backdrop-blur">
+          <nav className="container mx-auto flex flex-col px-4 py-4 gap-1">
+            {navItems.map((item) => (
+              <a
+                key={item.title}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium text-white hover:text-zinc-400 transition-colors py-3 border-b border-zinc-800 last:border-0 uppercase tracking-widest"
+              >
+                {item.title}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
